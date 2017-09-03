@@ -1,0 +1,458 @@
+body {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+	background-image: url('assets/bg.png');
+}
+
+a {
+	color: #F9A825;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #c1c1c1;
+}
+
+/*
+Fonts:
+font-family: 'Merriweather', serif;
+*/
+.fntMerriweather {
+	font-family: 'Merriweather', serif;
+}
+
+.fntSlabo {
+	font-family: 'Slabo 27px', serif;
+}
+
+
+.mnu {
+	overflow-x: hidden;
+	position: relative;
+	left: 0px;
+}
+
+.mnu_open {
+	left: 161px;
+}
+
+.mnu_open  .mnu_side {
+	left: 0px;
+}
+
+#mnu_toggle {
+	z-index: 1;
+	padding: 6px;
+	margin: 0px 8px;
+	position: fixed;
+	top: 16px;
+	width: 40px;
+	filter: invert(80%);
+	border: solid 2px #000;
+	border-radius: 10%;
+	background: none;
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-moz-transition: border-radius 0.4s ease, filter 0.1s ease,-moz-transform 0.2s, background 0.2s;
+	-webkit-transition: border-radius 0.4s ease, filter 0.1s ease,-webkit-transform 0.2s, background 0.2s;
+	transition: border-radius 0.4s ease, filter 0.1s ease,transform 0.2s, background 0.2s;
+}
+
+#mnu_toggle:hover {
+	cursor: pointer;
+	filter: invert(100%);
+	border-color: #fff;
+	border-radius: 80%;
+	background: #FFF;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.mnu_side , .mnu {
+	-webkit-transition: left 0.2s ease;
+	-moz-transition: left 0.2s ease;
+	transition: left 0.2s ease;
+}
+
+.mnu_side {
+	color: #ffffff;
+	position: fixed;
+	top: -20px;
+	left: -161px;
+	width: 140px;
+	height: 100%;
+	padding: 10px;
+	list-style: none;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+.mnu_side ul {
+	background-color: #000;
+	padding-bottom: 8px;
+}
+
+.mnu_side li {
+	margin: 8px 0px;
+	width: 146px;
+}
+
+.mnu_side li a {
+	color: #fff;
+	font-family: 'Merriweather';
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	background: #212121;
+	border-left: none;
+	-webkit-transition: border-left 0.1s, background 0.2s, color 0.1s;
+	transition: border-left 0.1s, background 0.2s, color 0.1s;
+	-moz-transition: border-left 0.1s, background 0.2s, color 0.1s;
+}
+
+.mnu_side li a:hover {
+	color: #F9A825;
+	background: #FFEB3B;
+	border-left: 6px solid #F9A825;
+}
+
+.wrapper {
+	font-family: 'Slabo 27px', serif;
+	top: -4px;
+	padding: 0px 5px;
+	background-color: #fff;
+	overflow-x: hidden;
+}
+
+.space {
+	display: none;
+}
+
+.mouseover {
+	display: unset;
+	visibility: hidden;
+}
+
+.centered {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centext {
+	text-align: center;
+}
+
+.logo {
+	width: 80px;
+}
+/*hello*/
+#mnu_logo {
+	width: 80px;
+	background: #000000;
+	filter: brightness(100%);
+	cursor: pointer;
+	-webkit-transition: filter 0.2s;
+	-moz-transition: filter 0.2s;
+	transition: filter 0.2s;
+}
+
+#mnu_logo:hover {
+	background: none;
+	filter: brightness(200%);
+}
+
+#content {
+	overflow-x: hidden;
+}
+
+.dark {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#social {
+	font-family: 'Slabo 27px', serif;
+	border-bottom: 4px solid #000000;
+}
+
+.lstIcons {
+	border-bottom: 4px solid #c1c1c1;
+}
+
+.lstIcons li {
+	float: center;
+	display: inline;
+}
+
+.lstIcons img {
+	width: 50px;
+	filter: invert(100%);
+	-webkit-transition: filter 0.2s;
+	-moz-transition: filter 0.2s;
+	transition: filter 0.2s;
+}
+
+.lstIcons img:hover {
+	filter: invert(0%);
+}
+
+.headline {
+	font-size: 48px;
+	text-align: center;
+}
+
+.para {
+	font-size: 16px;
+}
+
+.additional {
+	font-size: 16px;
+	color: #3e3e3e;
+}
+
+.divider {
+	color: white;
+	margin: 26px 0px;
+}
+
+.divider2 {
+	color: white;
+	margin: 8px 0px;
+}
+
+.divider2 {
+	color: white;
+	margin: 0px 0px;
+	padding: 0px;
+}
+
+.separation {
+	color: #fff;
+	height: 0px;
+	width: 100%;
+	display: block;
+	margin: 8px 0px;
+	border-bottom: 4px solid #212121;
+}
+
+.separation2 {
+	color: #212121;
+	height: 0px;
+	width: 100%;
+	display: block;
+	margin: 8px 0px;
+	border-bottom: 4px solid #c1c1c1;
+}
+
+.photoS {
+	width: 128px;
+}
+
+.photoM {
+	width: 192px;
+}
+
+.photo {
+	width: 256px;
+}
+
+.photoL {
+	width: 360px;
+}
+
+.otc_logo {
+	position: relative;
+	top: 0px;
+	transition: top 0.2s ease-out;
+}
+
+.otc_logo:hover{
+	top: -10px;
+}
+
+.phover {
+	position: relative;
+	top: 0px;
+	filter: brightness(100%);
+	transition: top 0.2s ease-out, filter 0.2s;
+}
+
+.phover:hover {
+	top: -10px;
+	filter: brightness(60%);
+}
+
+#bio_head {
+	border-bottom: 4px solid #000000;
+}
+
+#bio_body {
+	border-bottom: 4px solid #c1c1c1;
+	font-size: 16px;
+}
+
+.banner {
+	/*height: auto;*/
+	max-width: 100%;
+}
+
+#banner_otc {
+	border-bottom: 4px solid #FFFFFF;
+}
+
+.description {
+	padding: 10px;
+	background-color: #FFFFFF;
+	color: #000;
+}
+
+#footer {
+	text-align: center;
+	margin: 40px 0px;
+	font-size: 12px;
+}
+
+/* NAVIGATION MENU */
+.nav {
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+	float: center;
+	text-align: center;
+    width: 274px;
+    margin: 0 auto;
+}
+
+.nav_i {
+	position: relative;
+	float: left;
+	padding: 10px;
+	transition: color 0.2s;
+	color: #FFF;
+}
+
+.nav_i:hover {
+	color: yellow;
+	cursor: pointer;
+}
+
+.cB {
+	color: #000;
+}
+
+.cW {
+	color: #FFF;
+}
+
+.cY {
+	color: #FFEB3B;
+}
+
+.cYd {
+	color: #FFAA3A;
+}
+
+.cG {
+	color: #c1c1c1;
+}
+
+.grayscale {
+	filter: grayscale(0%);
+	animation: colorgain 1.6s alternate;
+	animation-iteration-count: 1;
+}
+
+@keyframes colorgain {
+	0% {
+		filter: grayscale(100%);
+	}
+	100% {
+		filter: grayscale(0%);
+	}
+}
+
+/* Carousel Gallery - - - - - - - - - - - */
+
+/* Slider - - - - - - - - - - - */
+.slider {
+	width: 260px;
+	height: 400px;
+	max-height: 400px;
+	margin: 40px;
+	padding: 10px;
+	overflow: hidden;
+	border: 4px solid #FFF;
+}
+
+.slider:hover {
+	cursor: pointer;
+}
+
+.slider_front {
+	height: 400px;
+	max-height: 400px;
+	position: relative;
+	top: 0px;
+	-webkit-transition: top 0.5s;
+	-moz-transition: top 0.5s;
+	transition: top 0.5s;
+}
+
+.slider_fhover {
+	top: -400px;
+}
+
+.slider_back {
+	max-height: 400px;
+	position: relative;
+	top: 400px;
+	-webkit-transition: top 0.5s;
+	-moz-transition: top 0.5s;
+	transition: top 0.5s;
+}
+
+.slider_bhover {
+	top: -400px;
+}
+
+.otc_char_bios > li {
+	float: left;
+}
+
+.gallery {
+	/*Image and Tags*/
+	max-width: 256px;
+	max-height: 144px;
+}
+
+.gallery:hover {
+	max-height: 154px;
+}
+
+.ghover {
+	width: 256px;
+	position: relative;
+	top: 0px;
+	filter: brightness(100%);
+	transition: top 0.2s ease-out, filter 0.2s;
+}
+
+.ghover:hover {
+	top: -10px;
+	filter: brightness(60%);
+}
+
+.gtags {
+	position: fixed;
+	top: 154px;
+	transition: top 0.2s;
+}
+
+.gtags:hover {
+	top: 144px;
+}
